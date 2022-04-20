@@ -22,7 +22,7 @@ const AddUser = () => {
 
     await axios({
       method: "POST",
-      url: "http://localhost:8000/api/trivia/",
+      url: "https://triv-rest.herokuapp.com/api/trivia/",
       data: formField,
     }).then((response) => {
       console.log(response.data);
