@@ -7,6 +7,7 @@ Deployed link can be found here: [Trivmaster](https://trivmaster.herokuapp.com/)
 
 [![landing-triv.png](https://i.postimg.cc/brv9VRBm/landing-triv.png)](https://postimg.cc/34PGd27G)
 
+
 # __Features__
 
 Game
