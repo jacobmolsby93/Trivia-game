@@ -2,7 +2,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 module.exports = function(app) {
   app.use(
-    '/api/trivia',
+    '/api',
     createProxyMiddleware({
       target: 'https://triv-rest.herokuapp.com',
       changeOrigin: true,

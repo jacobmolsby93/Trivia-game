@@ -43,7 +43,7 @@ const AddUser = () => {
                 <div className="spacebox-50"></div>
                 <div className="form-group w-100 m-0 p-0 d-flex align-items-center details-form">
                   <div className="form-wrapper">
-                    <label for="imgInp">
+                    <label htmlFor="imgInp">
                       <img
                         src={
                           profile_image
