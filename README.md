@@ -1,8 +1,30 @@
-# Getting Started with Create React App
+# __Trivmaster__
+
+A react application that runs with a django rest framework I have created to serve as a database for the users. The games objective is simple, to let the user add a name and a profile image. Then simply jump right in, the game consists of multiple questions that is taken from the-trivia-api. 
+Each question has 4 answers where as one of them is correct. At the moment the users can only add their name and profile image as well as play the game, but in the near future I want to implement a last screen with all the scores of the different players.
+
+Deployed link can be found here: [Trivmaster](https://trivmaster.herokuapp.com/).
+
+[![landing-triv.png](https://i.postimg.cc/brv9VRBm/landing-triv.png)](https://postimg.cc/34PGd27G)
+
+# __Features__
+
+Game
+- After enter has been pressed the user will be redirected to next page where the user is prompted to enter their name and add a profile image if they wish.
+[![details.png](https://i.postimg.cc/ZYgwsGJ3/details.png)](https://postimg.cc/t73dYmZC)
+
+- The ingame features a question based game where the user has the ability the choose between 4 different answers, if the answer is correct the answer will highlight in green.
+If the answer is incorrect it will highlight in red and the correct answer will be highlighted green.
+
+- The user has 120 seconds per question, if the timer runs out and the question is not answered. All 3 lives will be lost and the game is over.
+If however the user get an incorrect answer, one life is lost and the clock is reset for the next question. When all 3 lives have been used up the game is over and the user has the ability to back to the home screen.
+[![game-screen.png](https://i.postimg.cc/BvMgTyhj/game-screen.png)](https://postimg.cc/R3JK9Pxm)
+
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
