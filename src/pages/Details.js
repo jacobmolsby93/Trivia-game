@@ -25,7 +25,6 @@ const AddUser = () => {
       url: "https://triv-rest.herokuapp.com/api/trivia/",
       data: formField,
     }).then((response) => {
-      console.log(response.data);
       const User = response.data
       history(`/play/${User.id}`, { state: User });
     });

@@ -15,11 +15,11 @@ function Game() {
   if (profile_image != null) {
     profile_image = location.state.profile_image;
   }
+  console.log(location.state.profile_image)
   let name;
   if (name != null) {
     name = location.state.name;
   }
-  console.log(location)
   const [highscore, setHighscore] = useState(0)
   
 
@@ -307,10 +307,12 @@ function Game() {
   };
 
   const showReplay = () => {
+    gameRunning = false;
     let replay = document.querySelector("#replayScreen");
     replay.classList.remove("d-none");
   };
   const playAgain = () => {
+    gameRunning = false;
     let replay = document.querySelector("#replayScreen");
     replay.classList.add("d-none");
     history("/");
@@ -355,7 +357,7 @@ function Game() {
                 <div className="profile-inline d-flex align-items-center">
                   <img
                     className="profile-image-ingame"
-                    src={profile_image ? location.state.profile_image : profile}
+                    src={profile_image ? profile : location.state.profile_image}
                     alt="Picture of the player"
                   />
                   <p className="text-white sub-title m-0 ms-2">
